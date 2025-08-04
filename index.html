@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Invent Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Invent
+  * Template URL: https://bootstrapmade.com/invent-bootstrap-business-template/
+  * Updated: May 12 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <style>
+    .product-icon {
+      width: 12px;
+      height: 12px;
+      margin-right: 6px;
+    }
+
+    .bar-line {
+      border: 1px solid #ccc;
+      opacity: 0.3;
+    }
+
+    .image-fade-container {
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .fade-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      padding: 1rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 40px;
+    }
+
+    .fade-image.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .icon-selectors i {
+      cursor: pointer;
+      color: #666;
+      transition: all 0.3s ease;
+    }
+
+    .icon-selectors i.active {
+      color: #000;
+      transform: scale(1.2);
+    }
+
+    .case-content {
+      min-height: 450px;
+    }
+
+
+    .progress-container {
+      display: flex;
+      height: 4px;
+      margin-bottom: 2rem;
+      gap: 6px;
+      /* Add this line to create space between segments */
+    }
+
+    .progress-segment {
+      flex: 1;
+      background-color: #007bff;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: none;
+    }
+
+    @keyframes growSegment {
+      0% {
+        transform: scaleX(0);
+        opacity: 1;
+      }
+
+      90% {
+        transform: scaleX(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scaleX(1);
+        opacity: 0;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/elevate-logo.png" alt="">
+        <!-- <h1 class="sitename">Elevate</h1><span></span> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a href="#pricing">Pricing</a></li> -->
+          <!-- <li><a href="#team">Team</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <!-- <li><a href="#contact">Contact</a></li> -->
+            <li><a href="#contact">E-Content</a></li>
+
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Contact Us</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="badge-wrapper mb-3">
+              <div class="d-inline-flex align-items-center rounded-pill border border-accent-light">
+                <div class="icon-circle me-2">
+                  <i class="bi bi-bell"></i>
+                </div>
+                <span class="badge-text me-3">Innovative Solutions</span>
+              </div>
+            </div>
+
+            <h1 class="hero-title mb-4">Transforming SAP.<br>Empowering Business</h1>
+
+            <p class="hero-description mb-4">Accelerate innovation, reduce complexity, and unlock the full potential of
+              your SAP ecosystem with expert-led Technical and Functional services.</p>
+
+            <div class="cta-wrapper">
+              <a href="#" class="btn btn-primary">Let's Talk</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="./assets/img/hero-new-img.png" alt="Business Growth" class="img-fluid" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="row feature-boxes">
+          <div class="col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-box">
+              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+                <i class="bi bi-gear"></i>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title mt-3">SAP Technical Services</h3>
+                <p class="feature-text">Custom ABAP development, system integrations, performance optimization, and
+                  technical architecture design to maximize your SAP investment.</p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-box">
+              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+                <i class="bi bi-window"></i>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title mt-3">SAP Functional Services</h3>
+                <p class="feature-text">Business process optimization, module configuration, and functional consulting
+                  across all SAP modules to align technology with business goals.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-box">
+              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+                <i class="bi bi-headset"></i>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title mt-3">SAP Data Warehouse Services</h3>
+                <p class="feature-text">Business Intelligence, SAP BW/4HANA implementation, real-time analytics, and
+                  data visualization solutions for informed decision-making.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-box">
+              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+                <i class="bi bi-headset"></i>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title mt-3">SAP Cybersecurity & GRC</h3>
+                <p class="feature-text">Risk management, compliance automation, access controls, and governance
+                  frameworks to secure your SAP landscape and meet regulatory requirements.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p class="who-we-are">Who We Are</p>
+            <h3>Driving Digital Transformation with SAP & Cybersecurity Excellence</h3>
+            <p class="mt-4">
+              Elevate IT Solutions specializes in delivering enterprise-grade SAP implementation and comprehensive
+              cybersecurity services to help organizations streamline operations, ensure compliance, and stay ahead of
+              digital threats. Whether you're migrating to SAP S/4HANA, optimizing your existing SAP landscape or
+              fortifying your infrastructure against cyberattacks, our team of certified professionals is ready to
+              support your journey.
+            </p>
+            <!-- <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+            </ul> -->
+            <!-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
+          </div>
+
+          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <img src="assets/img/about/about-portrait-1.webp" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6">
+                <div class="row gy-4">
+                  <div class="col-lg-12">
+                    <img src="assets/img/about/about-8.webp" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/about/about-12.webp" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- How We Work Section -->
+    <section id="how-we-work" class="how-we-work section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>How It Works / Process Overview</h2>
+        <p>Our Proven 4-Step Approach to Empowering Your Digital Ecosystem</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="steps-5">
+          <div class="process-container">
+
+            <div class="d-flex">
+              <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="content">
+                  <span class="step-number">01</span>
+                  <div class="card-body">
+                    <div class="step-icon">
+                      <i class="bi bi-pencil-square"></i>
+                    </div>
+                    <div class="step-content">
+                      <h3>Discover</h3>
+                      <p>Understand your business goals and SAP landscape</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Process Item -->
+
+              <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="content">
+                  <span class="step-number">02</span>
+                  <div class="card-body">
+                    <div class="step-icon">
+                      <i class="bi bi-gear"></i>
+                    </div>
+                    <div class="step-content">
+                      <h3>Design</h3>
+                      <p>Craft solutions aligned to your roadmap</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Process Item -->
+
+            </div>
+
+
+
+            <div class="d-flex">
+
+              <div class="process-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="content">
+                  <span class="step-number">03</span>
+                  <div class="card-body">
+                    <div class="step-icon">
+                      <i class="bi bi-search"></i>
+                    </div>
+                    <div class="step-content">
+                      <h3>Deliver</h3>
+                      <p>Execute with speed, transparency, and agility</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Process Item -->
+
+              <div class="process-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="content">
+                  <span class="step-number">04</span>
+                  <div class="card-body">
+                    <div class="step-icon">
+                      <i class="bi bi-rocket-takeoff"></i>
+                    </div>
+                    <div class="step-content">
+                      <h3>Optimize</h3>
+                      <p>Continuously improve performance and ROI</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Process Item -->
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /How We Work Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Key Features</h2>
+        <p>Our solutions are designed with powerful features that deliver performance, efficiency, and ease of use. Each
+          feature is thoughtfully developed to address real business needs and enhance user experience.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center g-5">
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <div class="service-content">
+                <h3>Deep SAP Expertise</h3>
+                <p>With years of hands-on experience across multiple SAP modules,
+                  our team brings deep functional and technical knowledge to every project. We specialize in
+                  SAP implementations, integrations, upgrades, and customizations tailored to your unique
+                  business needs.</p>
+                <!-- <a href="#" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a> -->
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-phone-fill"></i>
+              </div>
+              <div class="service-content">
+                <h3>Faster Time to Value</h3>
+                <p>Our solutions are designed to deliver rapid results, enabling
+                  your business to realize benefits sooner. By leveraging proven methodologies, pre-configured
+                  templates, and deep domain expertise, we minimize implementation time without compromising
+                  quality.</p>
+                <!-- <a href="#" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a> -->
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-palette2"></i>
+              </div>
+              <div class="service-content">
+                <h3>Robust Security & Compliance</h3>
+                <p>We prioritize security and compliance at every stage of our
+                  solutions to protect your data and ensure regulatory adherence. Our systems are built with
+                  advanced encryption, access controls, and continuous monitoring to safeguard sensitive
+                  information.</p>
+                <!-- <a href="#" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a> -->
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <div class="service-content">
+                <h3>Tailored Solutions for Every Industry</h3>
+                <p>We understand that each industry has unique challenges, goals,
+                  and workflows—that's why our solutions are never one-size-fits-all. From manufacturing and
+                  utilities to healthcare and retail, we customize our approach to align with your specific
+                  needs.</p>
+                <!-- <a href="#" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a> -->
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-cloud-check"></i>
+              </div>
+              <div class="service-content">
+                <h3>Dedicated Engagement & Delivery Teams</h3>
+                <p>Our dedicated engagement and delivery teams work closely with you
+                  from project initiation to final handover, ensuring a seamless and transparent experience.
+                  With clear communication, proactive support, and deep technical expertise, we stay aligned
+                  with your goals at every step.</p>
+                <!-- <a href="#" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a> -->
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+              <div class="service-content">
+                <h3>Real-Time Analytics & Reporting Enablement</h3>
+                <p>Empower your business with real-time analytics and reporting
+                  tools that turn data into actionable insights. Our solutions provide instant visibility into
+                  key metrics, enabling faster, data-driven decisions. With interactive dashboards and
+                  customizable reports, you gain clarity across operations.</p>
+                <!-- <a href="#" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a> -->
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+
+    <div class="container mt-5 px-0 py-5">
+      <div class="row g-0">
+        <!-- Left: Content Carousel -->
+        <div class="col-lg-4 ps-5 m-0">
+          <div id="contentCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="p-4 case-content">
+                  <h5 class="text-black mb-4 fw-semibold">GRC Access Control, Process Control, and Risk Management
+                    Implementation ensures secure, compliant, and efficient business operations.</h5>
+                  <p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Enforces
+                    role-based access and segregation of duties.</p>
+                  <p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Automates
+                    control monitoring and workflow approvals</p>
+                        <p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Identifies, assesses, and mitigates enterprise risks proactively</p>
+                 
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="p-4 case-content">
+                  <h5 class="text-black mb-4 fw-semibold">SAP Fiori Custom App Development delivers user-friendly,
+                    role-based applications tailored to specific business needs using modern UX design.
+                  </h5>
+                  <p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Designs
+                    intuitive and responsive interfaces for enhanced us ability.</p>
+                  <p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Integrates
+                    seamlessly with SAP backend systems for real-time data.</p>
+               <p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Optimizes business processes with personalized user experiences.</p>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="p-4 case-content">
+                  <h5 class="text-black mb-4 fw-semibold">SAP Role Redesign Projects and Integration with IAM
+                    Solutions enhance security, streamline access management, and ensure compliance
+                    across systems.</h5>
+                  <p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Redefines SAP
+                    roles based on least privilege and business needs.</p>
+                  <p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Improves audit
+                    readiness and reduces access-related risks.</p>
+<p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Improves audit readiness and reduces access-related risks.</p>
+
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                <div class="p-4 case-content">
+                  <h5 class="text-black mb-4 fw-semibold">SAP Integration with Third-Party Systems enables seamless
+                    data exchange and process automation across diverse platforms, improving operational
+                    efficiency.</h5>
+                     <p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Utilizes APIs, middleware, or IDocs for real-time and batch integration.</p>
+
+                  <p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Enhances
+                    end-to-end visibility across enterprise applications.</p>
+                  <p class=""><span class="product-icon bg-info rounded-circle d-inline-block"></span>Ensures data
+                    consistency, accuracy, and process synchronization.</p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Image Fade with Top Icon and Bottom Headline -->
+        <div class="col-lg-8 m-0 p-0">
+          <div class="image-fade-container position-relative text-white m-0 p-0" style="max-height: 410px;">
+            <!-- Slide 1 -->
+            <div class="fade-image active m-0 p-0" style="background-image: url('./assets/img/swipe-img-1.png');">
+              <div class="d-flex justify-content-between align-items-center pt-3 px-3">
+                <!-- <i class="fa-solid fa-cloud-arrow-up fs-2"></i>
+                            <span class="fs-5 fw-bold">twilio</span> -->
+              </div>
+              <div class="px-5 pb-4">
+                <h3 class="fw-bold text-white">GRC Access Control / Process Control / <br> Risk Management
+                  Implementation</h3>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="fade-image m-0 p-0" style="background-image: url('./assets/img/swipe-img-2.png');">
+              <div class="d-flex justify-content-between align-items-center pt-3 px-3">
+                <!-- <i class="fa-solid fa-cloud-arrow-up fs-2"></i>
+                            <span class="fs-5 fw-bold">twilio</span> -->
+              </div>
+              <div class="px-5 pb-4">
+                <h3 class="fw-bold text-white">SAP Fiori Custom App Development</h3>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="fade-image m-0 p-0" style="background-image: url('./assets/img/swipe-img-3.png');">
+              <div class="d-flex justify-content-between align-items-center pt-3 px-3">
+                <!-- <i class="fa-solid fa-shield-halved fs-2"></i>
+                            <span class="fs-5 fw-bold">twilio</span> -->
+              </div>
+              <div class="px-5 pb-4">
+                <h3 class="fw-bold text-white">SAP Role Redesign Projects and <br>Integration with IAM solution</h3>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="fade-image m-0 p-0" style="background-image: url('./assets/img/swipe-img-4.png');">
+              <div class="d-flex justify-content-between align-items-center pt-3 px-3">
+                <!-- <i class="fa-solid fa-link fs-2"></i>
+                            <span class="fs-5 fw-bold">twilio</span> -->
+              </div>
+              <div class="px-5 pb-4">
+                <h3 class="fw-bold text-white">SAP Integration with Third-Party Systems</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress-container mb-5" id="progressBar">
+        <div class="progress-segment" id="segment0"></div>
+        <div class="progress-segment" id="segment1"></div>
+        <div class="progress-segment" id="segment2"></div>
+        <div class="progress-segment" id="segment3"></div>
+      </div>
+
+      <!-- Manual Icon Controls (Optional) -->
+      <!-- <div class="bar-line my-5"></div> -->
+      <div class="row text-center icon-selectors">
+        <div class="col-3">
+          <i class="fa-solid fa-shield-halved fs-2" onclick="goToSlide(0)"></i>
+        </div>
+        <div class="col-3">
+          <i class="fa-solid fa-chart-simple fs-2" onclick="goToSlide(1)"></i>
+        </div>
+        <div class="col-3">
+          <i class="fa-solid fa-database fs-2" onclick="goToSlide(2)"></i>
+        </div>
+        <div class="col-3">
+          <i class="fa-solid fa-industry fs-2" onclick="goToSlide(3)"></i>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const contentCarousel = new bootstrap.Carousel('#contentCarousel', {
+        interval: false,
+        ride: false
+      });
+
+      const images = document.querySelectorAll('.fade-image');
+      const icons = document.querySelectorAll('.icon-selectors i');
+      const segments = document.querySelectorAll('.progress-segment');
+      let currentSlide = 0;
+      const totalSlides = 4;
+
+      const updateImage = (index) => {
+        images.forEach((img, i) => {
+          img.classList.toggle('active', i === index);
+        });
+      };
+
+      const updateIcons = (index) => {
+        icons.forEach((icon, i) => {
+          icon.classList.toggle('active', i === index);
+        });
+      };
+
+      const resetAllSegments = () => {
+        segments.forEach(segment => {
+          segment.style.animation = 'none';
+          segment.style.transform = 'scaleX(0)';
+        });
+      };
+
+      const animateSegment = (index) => {
+        resetAllSegments();
+        const segment = segments[index];
+        segment.style.animation = 'none';
+        segment.offsetHeight; // reflow
+        segment.style.animation = 'growSegment 6s linear forwards';
+      };
+
+      const goToSlide = (index) => {
+        contentCarousel.to(index);
+        updateImage(index);
+        updateIcons(index);
+        animateSegment(index);
+        currentSlide = index;
+      };
+
+      const playLoop = () => {
+        goToSlide(currentSlide);
+        setTimeout(() => {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          playLoop();
+        }, 6000);
+      };
+
+      icons.forEach((icon, index) => {
+        icon.addEventListener('click', () => {
+          goToSlide(index);
+        });
+      });
+
+      playLoop();
+    </script>
+
+
+
+
+
+
+
+
+    <!-- Services Alt Section -->
+    <section id="services-alt" class="services-alt section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="content-block">
+              <!-- <h6 class="subtitle">Our innovative services</h6> -->
+              <h2 class="title">Portfolio Showcase</h2>
+              <p class="description">
+                Welcome to our Portfolio Showcase, where we highlight a selection of our most impactful and innovative
+                projects. Each delivery represents our commitment to quality, creativity, and client satisfaction. From
+                branding and design to development and strategy, our work spans across industries and business sizes.
+                These case highlights reflect not just what we do, but how we do it - with precision, collaboration, and
+                a results-driven approach. We take pride in understanding each client's unique needs and transforming
+                them into successful outcomes.
+              </p>
+              <!-- <div class="button-wrapper">
+                <a class="btn" href="services.html"><span>Explore All Services</span></a>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="services-list">
+              <div class="service-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                  <i class="bi bi-code-square"></i>
+                </div>
+                <div class="service-content">
+                  <h4><a href="service-details.html">SAP PM Integration for Industrial Plants</a></h4>
+                  <p>Seamlessly Integrating SAP Plant Maintenance to Maximize Uptime and Operational Efficiency</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="service-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <div class="service-content">
+                  <h4><a href="service-details.html">SAP SD Customizations for E-commerce Portals</a></h4>
+                  <p>Tailoring SAP Sales and Distribution to Power Seamless E-commerce Experiences</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="service-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-icon">
+                  <i class="bi bi-phone"></i>
+                </div>
+                <div class="service-content">
+                  <h4><a href="service-details.html">SAP BW Reports for Real-Time Sales Dashboards</a></h4>
+                  <p>Delivering Real-Time Sales Insights with Customized SAP BW Reporting Dashboards</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <!-- <div class="service-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-icon">
+                  <i class="bi bi-gear"></i>
+                </div>
+                <div class="service-content">
+                  <h4><a href="service-details.html">Tech Infrastructure</a></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                </div>
+              </div>End Service Item -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Alt Section -->
+
+
+
+
+       <div class="container mb-5 pt-5 pb-4">
+        <div class="strip-box">
+            <p class="fs-3 text-color-blue fw-bold">Industries <span class="text-color-blue">We Serve</span></p>
+        </div>
+        <p class="text-center fs-5">We bring deep domain knowledge and tailored IT solutions to</p>
+    </div>
+
+
+    <section class="bg-body-tertiary mt-5 mb-5 pt-5 pb-3">
+        <div class="container-fluid py-5">
+            <div class="row justify-content-evenly">
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="service-card">
+                        <div class="service-inner">
+                            <div class="boxy rounded-5 m-0 p-0">
+                                <div><i class="fa-solid fa-gear industry-icon"></i></div>
+                                <div class="clipPath"></div>
+                            </div>
+                            <div class="service-text">Construction
+
+                            </div>
+                            <!-- <p class="service-para">Project System & Real-Time Reporting</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="service-card">
+                        <div class="service-inner">
+                            <div class="boxy rounded-5 m-0 p-0">
+                                <div><i class="fa-solid fa-notes-medical industry-icon"></i></div>
+                                <div class="clipPath"></i>
+                                </div>
+                            </div>
+                            <div class="service-text">Healthcare</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="service-card">
+                        <div class="service-inner">
+                            <div class="boxy rounded-5 m-0 p-0">
+                                <div><i class="fa-solid fa-circle-info industry-icon"></i></div>
+                                <div class="clipPath"></div>
+                            </div>
+                            <div class="service-text">Retail</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="service-card">
+                        <div class="service-inner">
+                            <div class="boxy rounded-5 m-0 p-0">
+                                <div><i class="fa-solid fa-gas-pump industry-icon"></i></div>
+                                <div class="clipPath"></div>
+                            </div>
+                            <div class="service-text">Oil & Gas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="service-card">
+                        <div class="service-inner">
+                            <div class="boxy rounded-5 m-0 p-0">
+                                <div><i class="fa-solid fa-sack-dollar industry-icon"></i></div>
+                                <div class="clipPath"></i>
+                                </div>
+                            </div>
+                            <div class="service-text">Finance</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action 2 Section -->
+    <section id="call-to-action-2" class="call-to-action-2 section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="cta-image-wrapper">
+              <img src="assets/img/cta/cta-4.webp" alt="Call to Action" class="img-fluid rounded-4">
+              <div class="cta-pattern"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="cta-content">
+              <h2>Case Studies / Success Stories</h2>
+              <p class="lead">Real-World Success Stories Showcasing Our SAP and Cybersecurity Expertise.</p>
+
+              <div class="cta-features">
+                <div class="feature-item" data-aos="zoom-in" data-aos-delay="400">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>S/4HANA Upgrade for a Fortune 500 Manufacturer – Reduced Downtime by %</span>
+                </div>
+                <div class="feature-item" data-aos="zoom-in" data-aos-delay="450">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>SAP Access Control Automation for a Middle Eastern Company</span>
+                </div>
+                <div class="feature-item" data-aos="zoom-in" data-aos-delay="500">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>SAP GRC Risk Management and Process control Implementation</span>
+                </div>
+              </div>
+
+              <!-- <div class="cta-action mt-5">
+                <a href="#" class="btn btn-primary btn-lg me-3">Get Started</a>
+                <a href="#" class="btn btn-outline-primary btn-lg">Learn More</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action 2 Section -->
+
+
+
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
+            <div class="faq-contact-card">
+              <div class="card-icon">
+                <i class="bi bi-question-circle"></i>
+              </div>
+              <div class="card-content">
+                <h3>Still Have Questions?</h3>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+                  neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam
+                  vehicula elementum.</p>
+                <div class="contact-options">
+                  <a href="#" class="contact-option">
+                    <i class="bi bi-envelope"></i>
+                    <span>Email Support</span>
+                  </a>
+                  <a href="#" class="contact-option">
+                    <i class="bi bi-chat-dots"></i>
+                    <span>Live Chat</span>
+                  </a>
+                  <a href="#" class="contact-option">
+                    <i class="bi bi-telephone"></i>
+                    <span>Call Us</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-accordion">
+              <div class="faq-item faq-active">
+                <div class="faq-header">
+                  <h3>Vivamus suscipit tortor eget felis porttitor volutpat?</h3>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-content">
+                  <p>
+                    Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum
+                    sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tincidunt.
+                  </p>
+                </div>
+              </div><!-- End FAQ Item-->
+
+              <div class="faq-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="faq-header">
+                  <h3>Curabitur aliquet quam id dui posuere blandit?</h3>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-content">
+                  <p>
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+                    neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus. Mauris
+                    blandit aliquet elit, eget tincidunt nibh pulvinar.
+                  </p>
+                </div>
+              </div><!-- End FAQ Item-->
+
+              <div class="faq-item">
+                <div class="faq-header">
+                  <h3>Sed porttitor lectus nibh ullamcorper sit amet?</h3>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-content">
+                  <p>
+                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis
+                    a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit
+                    amet quam vehicula elementum.
+                  </p>
+                </div>
+              </div><!-- End FAQ Item-->
+
+              <div class="faq-item">
+                <div class="faq-header">
+                  <h3>Nulla quis lorem ut libero malesuada feugiat?</h3>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-content">
+                  <p>
+                    Donec sollicitudin molestie malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+                    neque, auctor sit amet aliquam vel.
+                  </p>
+                </div>
+              </div><!-- End FAQ Item-->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+ 
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What Our Client Says</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 800,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "spaceBetween": 30,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "768": {
+                  "slidesPerView": 2
+                },
+                "1200": {
+                  "slidesPerView": 3
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                    "ElevateITech helped us accelerate our SAP GRC deployment with incredible efficiency and business
+                    alignment."
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="assets/img/person/person-m-8.webp" alt="Profile Image">
+                    <div>
+                      <h3>— Head of IT, </h3>
+                      <h4 class="fw-bold">Global Construction Leader</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                    "Their SAP technical experts are top-notch. We saw a 40% performance boost post-migration."
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="assets/img/person/person-f-3.webp" alt="Profile Image">
+                    <div>
+                      <h3>— CIO, </h3>
+                      <h4 class="fw-bold">Multinational Manufacturing Firm</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                    "ElevateITech helped us accelerate our SAP GRC deployment with incredible efficiency and business
+                    alignment."
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="assets/img/person/person-f-10.webp" alt="Profile Image">
+                    <div>
+                      <h3>— Head of IT, </h3>
+                      <h4>Global Construction Leader</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                    "Their SAP technical experts are top-notch. We saw a 40% performance boost post-migration."
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="assets/img/person/person-m-5.webp" alt="Profile Image">
+                    <div>
+                      <h3>— CIO</h3>
+                      <h4>Multinational Manufacturing Firm</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
+                    culpa labore duis sunt culpa nulla illum cillum fugiat.
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="assets/img/person/person-m-2.webp" alt="Profile Image">
+                    <div>
+                      <h3>Michael Davis</h3>
+                      <h4>CEO &amp; Founder</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                    Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus
+                    qui iste cupiditate sed temporibus est aspernatur.
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="assets/img/person/person-f-7.webp" alt="Profile Image">
+                    <div>
+                      <h3>Sarah Thompson</h3>
+                      <h4>Art Director</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Start a business with us just by one email. Drop a email and we will connect you.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-card">
+              <div class="icon-box">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <h3>Our Address</h3>
+              <p>Pillar No-123, Wase Arcade, Attapur, Hyderabad, Telangana, 500048</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-card">
+              <div class="icon-box">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <h3>Contact Number</h3>
+              
+              <p>Mobile: +91 123-456-7890<br>
+                Email: elevateit@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="info-card">
+              <div class="icon-box">
+                <i class="bi bi-clock"></i>
+              </div>
+              <h3>Opening Hour</h3>
+              <p>Monday - Saturday: 9:00 - 18:00<br>
+                Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="form-wrapper" data-aos="fade-up" data-aos-delay="400">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-person"></i></span>
+                      <input type="text" name="name" class="form-control" placeholder="Your name*" required="">
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                      <input type="email" class="form-control" name="email" placeholder="Email address*" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-6 form-group">
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-phone"></i></span>
+                      <input type="text" class="form-control" name="phone" placeholder="Phone number*" required="">
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-list"></i></span>
+                      <select name="subject" class="form-control" required="">
+                        <option value="">Select service*</option>
+                        <option value="Service 1">Consulting</option>
+                        <option value="Service 2">Development</option>
+                        <option value="Service 3">Marketing</option>
+                        <option value="Service 4">Support</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
+                      <textarea class="form-control" name="message" rows="6" placeholder="Write a message*"
+                        required=""></textarea>
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit">Submit Message</button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">MyWebsite</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Elevate</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
